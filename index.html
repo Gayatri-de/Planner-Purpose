@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planner & Purpose — Your planning buddy</title>
+  <meta name="description" content="Planner & Purpose: your planning buddy for thoughtfully designed planners, diaries and journals." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="fixes.css" />
+</head>
+<body>
+  <div class="announcement">Free shipping on orders over ₹999 <span>✦</span> Made for the way you live</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Planner and Purpose home">Planner <i>&</i> Purpose</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#story">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" aria-label="Search">⌕</button>
+      <button class="bag-button" id="bagButton" aria-label="Shopping bag">Bag <span id="bagCount">0</span></button>
+      <button class="menu-button" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A little room for what matters</p>
+        <h1>Gentle plans.<br>Big <em>becoming.</em></h1>
+        <p class="hero-text">Thoughtful paper goods for all your plans, pauses, lists and big beautiful dreams.</p>
+        <a class="button button-dark" href="#shop">Find your planner <span>↗</span></a>
+        <div class="hero-note"><span class="scribble">✺</span><span>Undated &amp; designed to<br>start whenever you do.</span></div>
+      </div>
+      <div class="hero-art" aria-label="A lavender planner displayed with paper flowers">
+        <div class="sun"></div><div class="grid-paper"></div>
+        <div class="flower flower-a"><i></i><i></i><i></i><i></i><b></b></div>
+        <div class="flower flower-b"><i></i><i></i><i></i><i></i><b></b></div>
+        <div class="hero-book"><div class="book-binding"></div><span>THIS IS<br>MY YEAR</span><small>2025—26</small><div class="cover-daisy">✳</div></div>
+        <div class="pencil"></div>
+        <p class="art-label">Begin beautifully<br><span>every day.</span></p>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Product categories"><div>Planners <b>✦</b> Diaries <b>✦</b> Journals <b>✦</b> For every season <b>✦</b> Planners <b>✦</b> Diaries <b>✦</b> Journals <b>✦</b></div></section>
+
+    <section class="intro" id="collections">
+      <p class="eyebrow">Meet the collection</p>
+      <h2>Paper tools for a<br><em>full</em> life.</h2>
+      <p>However you move through the world, there’s a page waiting for you.</p>
+      <div class="collection-grid">
+        <a class="collection-card card-coral" href="#shop"><div class="mini-book lined"><span>DAY<br>BY DAY</span></div><h3>Plan your days</h3><span class="round-arrow">↗</span></a>
+        <a class="collection-card card-blue" href="#shop"><div class="mini-book grid"><span>IDEAS<br>LIVE<br>HERE</span></div><h3>Hold your thoughts</h3><span class="round-arrow">↗</span></a>
+        <a class="collection-card card-yellow" href="#shop"><div class="mini-book dots"><span>MAKE<br>IT<br>HAPPEN</span></div><h3>Chase your goals</h3><span class="round-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">Shop the favourites</p><h2>Find your <em>format.</em></h2></div><a href="#shop" class="text-link">Shop all stationery <span>→</span></a></div>
+      <div class="filter-row" role="group" aria-label="Filter products">
+        <button class="filter active" data-filter="all">All goods</button><button class="filter" data-filter="planner">Planners</button><button class="filter" data-filter="diary">Diaries</button><button class="filter" data-filter="journal">Journals</button>
+      </div>
+      <div class="products">
+        <article class="product" data-kind="planner"><div class="product-image peach"><span class="tag">Bestseller</span><div class="product-book book-peach"><div class="book-flower">✿</div><p>THE<br>WEEKLY<br>EDIT</p><small>planner &amp; purpose</small></div><button class="quick-add" data-product="The Weekly Edit">Quick add <span>+</span></button></div><div class="product-meta"><div><h3>The Weekly Edit</h3><p>Undated weekly planner</p></div><strong>₹699</strong></div></article>
+        <article class="product" data-kind="journal"><div class="product-image lilac"><div class="product-book book-lilac"><div class="moon">☾</div><p>NOTES<br>TO SELF</p><small>keep close</small></div><button class="quick-add" data-product="Notes to Self">Quick add <span>+</span></button></div><div class="product-meta"><div><h3>Notes to Self</h3><p>Guided reflection journal</p></div><strong>₹549</strong></div></article>
+        <article class="product" data-kind="diary"><div class="product-image blue"><span class="tag">New</span><div class="product-book book-blue"><div class="starburst">✺</div><p>THE<br>EVERYDAY<br>DIARY</p><small>one page at a time</small></div><button class="quick-add" data-product="The Everyday Diary">Quick add <span>+</span></button></div><div class="product-meta"><div><h3>The Everyday Diary</h3><p>Daily pages, no pressure</p></div><strong>₹599</strong></div></article>
+        <article class="product" data-kind="planner"><div class="product-image butter"><div class="product-book book-butter"><div class="rays">☼</div><p>GROW<br>AT YOUR<br>OWN PACE</p><small>an undated planner</small></div><button class="quick-add" data-product="Grow at Your Own Pace">Quick add <span>+</span></button></div><div class="product-meta"><div><h3>Grow at Your Own Pace</h3><p>Monthly goal planner</p></div><strong>₹749</strong></div></article>
+      </div>
+    </section>
+
+    <section class="purpose-section" id="story">
+      <div class="purpose-art"><div class="paper-stack"><div class="sheet back"></div><div class="sheet middle"></div><div class="sheet front"><span>Notes from<br>today</span><i></i><i></i><i></i><i></i></div></div><div class="orange-shape">✳</div></div>
+      <div class="purpose-copy"><p class="eyebrow">Made with intention</p><h2>For all the<br>ways you <em>become.</em></h2><p>We believe a planner should fit into your life—not the other way around. Our pages invite you to be curious, ambitious, gentle, messy and entirely yourself.</p><a class="text-link" href="#shop">Read our story <span>→</span></a><div class="quote"><span>“</span><p>I use mine for plans, but it’s become the place where I collect my whole life.</p><small>— A Planner person</small></div></div>
+    </section>
+
+    <section class="cover-showcase" aria-labelledby="cover-title">
+      <div class="cover-heading"><p class="eyebrow">Choose your cover</p><h2 id="cover-title">Made to feel like<br><em>yours.</em></h2><p>Three cover moods for every kind of plan.</p></div>
+      <div class="cover-grid">
+        <article class="cover-design bloom-cover"><div class="cover-spine"></div><span class="cover-mark">✿</span><div><small>Planner &amp; Purpose</small><h3>Bloom<br>slowly.</h3></div><p>UNDATED PLANNER</p></article>
+        <article class="cover-design moon-cover"><div class="cover-spine"></div><span class="cover-mark">☾</span><div><small>Planner &amp; Purpose</small><h3>In my<br>own orbit.</h3></div><p>UNDATED PLANNER</p></article>
+        <article class="cover-design grove-cover"><div class="cover-spine"></div><span class="cover-mark">❋</span><div><small>Planner &amp; Purpose</small><h3>Grow<br>your way.</h3></div><p>UNDATED PLANNER</p></article>
+      </div>
+    </section>
+
+    <section class="newsletter"><div><p class="eyebrow">Small sparks, in your inbox</p><h2>Make space for<br>good things.</h2></div><form id="newsletterForm"><label for="email">Your email address</label><div><input id="email" type="email" placeholder="hello@you.com" required><button type="submit" aria-label="Subscribe">→</button></div><p class="form-message" id="formMessage"></p></form><div class="newsletter-flower">✿</div></section>
+  </main>
+  <footer><a class="brand" href="#top">Planner <i>&</i> Purpose</a><p>Your planning buddy.</p><div><a href="#shop">Instagram</a><a href="#shop">Pinterest</a><a href="mailto:hello@plannerandpurpose.com">Say hello</a></div><small>© 2026 Planner &amp; Purpose</small></footer>
+  <aside class="cart" id="cart" aria-hidden="true"><div class="cart-head"><h2>Your bag</h2><button id="closeCart" aria-label="Close bag">×</button></div><div id="cartItems" class="cart-items"><p>Your bag is feeling a little empty.</p></div><div class="cart-bottom"><div><span>Subtotal</span><strong id="subtotal">₹0</strong></div><button class="button button-dark">Checkout <span>↗</span></button></div></aside><div class="overlay" id="overlay"></div>
+  <dialog class="checkout-dialog" id="checkoutDialog" aria-labelledby="checkoutTitle">
+    <button class="dialog-close" id="closeCheckout" aria-label="Close checkout">×</button>
+    <div id="checkoutContent">
+      <p class="eyebrow">Almost yours</p>
+      <h2 id="checkoutTitle">Checkout</h2>
+      <p class="checkout-summary" id="checkoutSummary"></p>
+      <form id="checkoutForm">
+        <label>Full name<input name="name" required autocomplete="name" placeholder="Your name"></label>
+        <label>Email address<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+        <label>Delivery address<textarea name="address" required placeholder="House / street / city / postal code"></textarea></label>
+        <button class="button button-dark" type="submit">Place demo order <span>→</span></button>
+      </form>
+      <p class="checkout-note">This is a demo checkout. No payment will be collected.</p>
+    </div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>

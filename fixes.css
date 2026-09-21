@@ -1,0 +1,73 @@
+/* Keeps collection labels clear of their arrow affordance. */
+.collection-card h3 {
+  left: 25px;
+  bottom: 28px;
+  right: 76px;
+}
+
+.cart-item-actions { display: flex; align-items: center; gap: 10px; margin-top: 9px; }
+.quantity-control { display: inline-flex; align-items: center; border: 1px solid var(--line); }
+.quantity-control button { border: 0; background: transparent; padding: 2px 8px; cursor: pointer; font-size: 16px; }
+.quantity-control span { min-width: 22px; text-align: center; font: 11px 'DM Mono', monospace; }
+.checkout-dialog { width: min(500px, calc(100% - 32px)); border: 0; padding: 40px; background: #fbf7f0; color: var(--ink); box-shadow: 0 18px 70px #0005; }
+.checkout-dialog::backdrop { background: #0008; }
+.checkout-dialog h2 { font-size: 48px; }
+.dialog-close { position: absolute; right: 17px; top: 13px; border: 0; background: transparent; font-size: 28px; cursor: pointer; }
+.checkout-summary { padding: 15px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+#checkoutForm { display: grid; gap: 15px; margin-top: 20px; }
+#checkoutForm label { display: grid; gap: 7px; font: 10px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; }
+#checkoutForm input, #checkoutForm textarea { width: 100%; border: 1px solid #cfc3b4; background: #fffdf8; padding: 11px; color: var(--ink); font: 14px 'DM Sans', sans-serif; }
+#checkoutForm textarea { min-height: 75px; resize: vertical; }
+#checkoutForm .button { width: 100%; margin-top: 3px; }
+.checkout-note { color: #776f67; font-size: 11px; text-align: center; margin: 17px 0 0; }
+.order-success { text-align: center; padding: 25px 0 12px; }
+.order-success h2 { font-size: 46px; }
+.order-success p { line-height: 1.6; }
+
+/* Soft editorial theme */
+:root { --cream: #fbf5ee; --coral: #c87b8d; --line: #dfd0c5; }
+.announcement, footer { background: #403335; }
+.hero-art { background: #e8caca; }
+.sun { background: #cc8596; }
+.hero-book { background: #aa8090; }
+.pencil { background: #c87b8d; }
+.grid-paper { background-color: #f8ede0; }
+.marquee { background: #e7c8cd; }
+.card-coral { background: #e6b2aa; }
+.card-blue { background: #d5dfe0; }
+.card-yellow { background: #ebd8a9; }
+.shop-section { background: #f5ede6; }
+.peach { background: #e8c1b7; }
+.lilac { background: #d2c3ca; }
+.blue { background: #c9d6d4; }
+.butter { background: #ead9af; }
+.book-peach { background: #c87b8d; }
+.book-lilac { background: #866c77; }
+.book-blue { background: #668682; }
+.book-butter { background: #a69b72; }
+.purpose-art { background: #d8e1d5; }
+.sheet.back { background: #c87b8d; }
+.purpose-copy { background: #fbf5ee; }
+.newsletter { background: #c87b8d; }
+.newsletter-flower { color: #efd5ad; }
+
+.cover-showcase { padding: 105px 7%; background: #f5ede6; text-align: center; }
+.cover-heading h2 { font-size: clamp(45px, 5vw, 66px); }
+.cover-heading > p:last-child { margin: 18px 0 40px; color: #6e625c; }
+.cover-grid { display: flex; justify-content: center; align-items: end; gap: clamp(22px, 5vw, 70px); }
+.cover-design { width: min(235px, 28vw); aspect-ratio: .68; position: relative; overflow: hidden; padding: 26px 24px 20px; color: #fff9ee; text-align: left; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 15px 17px 20px #563d3530; transition: transform .25s ease; }
+.cover-design:hover { transform: translateY(-8px) rotate(-1deg); }
+.cover-design::before { content: ''; position: absolute; inset: 11px; border: 1px solid #fff8; pointer-events: none; }
+.cover-design > * { position: relative; z-index: 1; }
+.cover-design small, .cover-design > p { font: 9px 'DM Mono', monospace; letter-spacing: .1em; }
+.cover-design h3 { margin: 0; font: 500 clamp(28px, 3vw, 42px)/.95 'Playfair Display', serif; letter-spacing: -.06em; }
+.cover-design > p { margin: 0; }
+.cover-spine { position: absolute; left: 7px; top: 7px; bottom: 7px; width: 9px; border-left: 1px solid #fff6; border-right: 1px solid #fff6; }
+.cover-mark { position: absolute; right: 24px; top: 42px; font-size: 43px; }
+.bloom-cover { background: #bc788b; }
+.bloom-cover::after { content: '✿  ✿  ✿'; position: absolute; bottom: 28px; right: -23px; color: #edc6ba; font-size: 68px; letter-spacing: -26px; transform: rotate(-10deg); }
+.moon-cover { background: #536379; }
+.moon-cover::after { content: '·  ·  ·  ·  ·  ·  ·'; position: absolute; right: 17px; bottom: 50px; color: #e6cb88; font-size: 25px; line-height: 1.7; width: 82px; word-spacing: 15px; }
+.grove-cover { background: #7c9e83; }
+.grove-cover::after { content: '❋'; position: absolute; bottom: -37px; left: -30px; font-size: 190px; color: #c8d498; transform: rotate(22deg); }
+@media (max-width: 600px) { .cover-showcase { padding: 78px 7%; }.cover-grid { gap: 14px; }.cover-design { width: 30%; padding: 18px 15px 13px; }.cover-design h3 { font-size: 24px; }.cover-mark { top: 32px; right: 14px; font-size: 30px; }.cover-design small, .cover-design > p { font-size: 7px; }.cover-spine { left: 5px; }.bloom-cover::after { font-size: 45px; }.moon-cover::after { font-size: 16px; }.grove-cover::after { font-size: 130px; } }
